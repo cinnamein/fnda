@@ -15,7 +15,7 @@
 
     <!-- Header -->
     <header class="bg-blue-600 text-white shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-3.5 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-6 py-3.5 flex justify-between items-center">
             <div class="flex items-center space-x-3">
                 <span class="bg-amber-400 text-blue-950 font-black text-xs px-2.5 py-1 rounded">emart</span>
                 <span class="font-bold text-lg sm:text-xl tracking-tight">고래잇! 11월 혜택 안내</span>
@@ -27,20 +27,20 @@
     </header>
 
     <!-- Main Container -->
-    <div class="max-w-5xl mx-auto px-6 py-8 space-y-8 flex-1 w-full">
+    <div class="max-w-7xl mx-auto px-6 py-8 space-y-8 flex-1 w-full">
 
         <!-- Hero Title Section -->
         <section class="text-center space-y-3">
             <div class="inline-block bg-blue-100 text-blue-800 text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full">
-                📅 2026.11.02(월) ~ 11.29(일) [4주간]
+                📅 2026.11.02(월) ~ 11.29(일) [4주간][cite: 1, 2]
             </div>
             <h1 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">
                 이마트 고래잇!! <span class="text-blue-600">4대 알뜰 프로모션</span>
             </h1>
-            <p class="text-sm sm:text-base text-slate-600 font-medium">센트럴점 · 파크점 · 리버점 동시 진행</p>
+            <p class="text-sm sm:text-base text-slate-600 font-medium">센트럴점 · 파크점 · 리버점 동시 진행[cite: 1, 2]</p>
 
             <!-- Weather API Widget -->
-            <div id="weather-banner" class="max-w-2xl mx-auto mt-4 bg-white border border-slate-200 rounded-2xl p-4 shadow-sm flex items-center justify-between text-left">
+            <div id="weather-banner" class="max-w-xl mx-auto mt-4 bg-white border border-slate-200 rounded-2xl p-4 shadow-sm flex items-center justify-between text-left">
                 <div class="flex items-center space-x-3.5">
                     <span id="weather-icon" class="text-3xl">☀️</span>
                     <div>
@@ -52,49 +52,39 @@
             </div>
         </section>
 
-        <!-- Store Notice Bar -->
-        <nav class="max-w-3xl mx-auto bg-blue-50 border border-blue-200 rounded-2xl p-4 text-center space-y-1.5 shadow-xs">
-            <div class="text-xs font-bold text-blue-900 uppercase tracking-wide">🏪 점포별 혜택 적용 안내</div>
-            <p class="text-xs sm:text-sm text-slate-700 font-medium">
-                <strong class="text-blue-600">센트럴점 · 파크점</strong> : 프로모션 1 ~ 3번 공통 적용<br>
-                <strong class="text-indigo-600">리버점</strong> : 공통 혜택 + <strong>프로모션 4번(퇴근길 타임세일)</strong> 단독 추가 적용!
-            </p>
-        </nav>
-
-        <!-- Promotions List (2열 그리드 - 카드 이미지 포함) -->
-        <main class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Promotions List (4열 그리드 배치) -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
             <!-- PROMOTION 1: 평일 식사 콤보 -->
             <section class="bg-white rounded-2xl border-2 border-blue-500 shadow-sm overflow-hidden flex flex-col justify-between">
                 <div>
-                    <div class="bg-blue-500 text-white px-5 py-2.5 flex justify-between items-center text-xs font-bold">
-                        <span>PROMOTION 01 · 평일 한정</span>
-                        <span class="bg-blue-700 text-white px-2.5 py-0.5 rounded text-[11px]">센트럴 · 파크 · 리버 공통</span>
+                    <div class="bg-blue-500 text-white px-4 py-2.5 flex justify-between items-center text-xs font-bold">
+                        <span>PROMOTION 01</span>
+                        <span class="bg-blue-700 text-white px-2 py-0.5 rounded text-[10px]">전 점포 공통</span>
                     </div>
-                    <!-- 카드뉴스 1 이미지 삽입 -->
-                    <div class="w-full h-48 bg-slate-100 overflow-hidden relative">
-                        <img src="카드뉴스1.jpg" alt="평일 식사 콤보 포스터" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <div class="w-full h-40 bg-slate-100 overflow-hidden relative">
+                        <img src="기획안/카드뉴스1.jpg" alt="평일 식사 콤보 포스터" class="w-full h-full object-cover hover:scale-105 transition duration-300">
                     </div>
-                    <div class="p-6 space-y-3">
-                        <div class="flex justify-between items-start gap-2">
+                    <div class="p-5 space-y-3">
+                        <div class="flex justify-between items-start gap-1">
                             <div>
-                                <span class="text-xs font-extrabold text-blue-600 uppercase tracking-wide">월~목 식사 콤보</span>
-                                <h2 class="text-xl font-black text-slate-900 mt-0.5">간편식 + 음료/유제품 조합</h2>
+                                <span class="text-[11px] font-extrabold text-blue-600 uppercase tracking-wide">월~목 식사 콤보</span>
+                                <h2 class="text-lg font-black text-slate-900 mt-0.5">간편식 + 음료/유제품</h2>
                             </div>
-                            <div class="bg-red-500 text-white text-sm font-black px-2.5 py-1 rounded-xl shadow-sm shrink-0">
-                                15% 할인
+                            <div class="bg-red-500 text-white text-xs font-black px-2 py-1 rounded-lg shadow-sm shrink-0">
+                                15% 할인[cite: 1, 12]
                             </div>
                         </div>
-                        <p class="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
-                            간편식 1개와 음료 또는 유제품 1개를 함께 구매하면 결제 시 15% 즉시 할인 혜택을 드립니다[cite: 1, 12].
+                        <p class="text-xs text-slate-600 font-medium leading-relaxed">
+                            간편식 1개와 음료·유제품 1개를 함께 구매하면 결제 시 15% 즉시 할인![cite: 1, 12]
                         </p>
                     </div>
                 </div>
-                <div class="p-6 pt-0">
-                    <div class="bg-blue-50 border border-blue-100 rounded-xl p-3 text-xs text-slate-700 space-y-1">
-                        <div class="font-bold text-blue-900">⏰ 운영 시간대 (하루 2회 적용)</div>
-                        <p class="font-semibold text-blue-800">• 점심: 11:30 ~ 13:30 / 저녁: 17:30 ~ 19:30[cite: 1, 12]</p>
-                        <p class="text-[11px] text-slate-500">* 동일 영수증 동시 구매 시 적용 (1세트 기준)[cite: 1]</p>
+                <div class="p-5 pt-0">
+                    <div class="bg-blue-50 border border-blue-100 rounded-xl p-3 text-[11px] text-slate-700 space-y-1">
+                        <div class="font-bold text-blue-900">⏰ 운영 시간대</div>
+                        <p class="font-semibold text-blue-800">11:30~13:30 / 17:30~19:30[cite: 1, 12]</p>
+                        <p class="text-[10px] text-slate-500">* 동일 영수증 동시 구매 (1세트)</p>
                     </div>
                 </div>
             </section>
@@ -102,35 +92,34 @@
             <!-- PROMOTION 2: 주말 즉시 할인 -->
             <section class="bg-white rounded-2xl border-2 border-amber-400 shadow-sm overflow-hidden flex flex-col justify-between">
                 <div>
-                    <div class="bg-amber-400 text-amber-950 px-5 py-2.5 flex justify-between items-center text-xs font-black">
-                        <span>PROMOTION 02 · 주말 한정</span>
-                        <span class="bg-amber-500 text-amber-950 px-2.5 py-0.5 rounded text-[11px]">센트럴 · 파크 · 리버 공통</span>
+                    <div class="bg-amber-400 text-amber-950 px-4 py-2.5 flex justify-between items-center text-xs font-black">
+                        <span>PROMOTION 02</span>
+                        <span class="bg-amber-500 text-amber-950 px-2 py-0.5 rounded text-[10px]">전 점포 공통</span>
                     </div>
-                    <!-- 카드뉴스 2 이미지 삽입 -->
-                    <div class="w-full h-48 bg-slate-100 overflow-hidden relative">
-                        <img src="카드뉴스2.jpg" alt="주말 즉시 할인 포스터" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <div class="w-full h-40 bg-slate-100 overflow-hidden relative">
+                        <img src="기획안/카드뉴스2.jpg" alt="주말 즉시 할인 포스터" class="w-full h-full object-cover hover:scale-105 transition duration-300">
                     </div>
-                    <div class="p-6 space-y-3">
-                        <div class="flex justify-between items-start gap-2">
+                    <div class="p-5 space-y-3">
+                        <div class="flex justify-between items-start gap-1">
                             <div>
-                                <span class="text-xs font-extrabold text-amber-600 uppercase tracking-wide">금~일 주말 장보기</span>
-                                <h2 class="text-xl font-black text-slate-900 mt-0.5">35,000원 이상 구매 시</h2>
+                                <span class="text-[11px] font-extrabold text-amber-600 uppercase tracking-wide">금~일 주말 장보기</span>
+                                <h2 class="text-lg font-black text-slate-900 mt-0.5">3.5만 원 이상 구매 시</h2>
                             </div>
-                            <div class="bg-amber-500 text-slate-950 text-sm font-black px-2.5 py-1 rounded-xl shadow-sm shrink-0">
-                                2,000원 할인
+                            <div class="bg-amber-500 text-slate-950 text-xs font-black px-2 py-1 rounded-lg shadow-sm shrink-0">
+                                2,000원 할인[cite: 1, 13]
                             </div>
                         </div>
-                        <p class="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
-                            다른 상품 할인을 먼저 적용한 후, 장바구니 대상 금액이 3.5만 원 이상이면 2천 원을 즉시 차감해 드립니다[cite: 1, 13].
+                        <p class="text-xs text-slate-600 font-medium leading-relaxed">
+                            기타 상품 할인 후, 장바구니 대상 금액 3.5만 원 이상 시 2천 원 즉시 차감![cite: 1, 13]
                         </p>
                     </div>
                 </div>
-                <div class="p-6 pt-0">
-                    <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-slate-800 space-y-1">
+                <div class="p-5 pt-0">
+                    <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-[11px] text-slate-800 space-y-1">
                         <div class="font-bold text-amber-900">💡 이용 가이드 3단계</div>
-                        <p>1. 금/토/일 매장 방문하기[cite: 13]</p>
-                        <p>2. 장바구니에 35,000원 이상 담기[cite: 1, 13]</p>
-                        <p>3. 계산 시 2,000원 즉시 할인 받기[cite: 1, 13]</p>
+                        <p>1. 주말(금~일) 방문[cite: 13]</p>
+                        <p>2. 35,000원 이상 담기[cite: 1, 13]</p>
+                        <p>3. 2,000원 즉시 할인[cite: 1, 13]</p>
                     </div>
                 </div>
             </section>
@@ -138,33 +127,32 @@
             <!-- PROMOTION 3: 매일 식사 연계 교차구매 -->
             <section class="bg-white rounded-2xl border-2 border-emerald-500 shadow-sm overflow-hidden flex flex-col justify-between">
                 <div>
-                    <div class="bg-emerald-600 text-white px-5 py-2.5 flex justify-between items-center text-xs font-bold">
-                        <span>PROMOTION 03 · 매일 상시</span>
-                        <span class="bg-emerald-800 text-white px-2.5 py-0.5 rounded text-[11px]">센트럴 · 파크 · 리버 공통</span>
+                    <div class="bg-emerald-600 text-white px-4 py-2.5 flex justify-between items-center text-xs font-bold">
+                        <span>PROMOTION 03</span>
+                        <span class="bg-emerald-800 text-white px-2 py-0.5 rounded text-[10px]">전 점포 공통</span>
                     </div>
-                    <!-- 카드뉴스 3 이미지 삽입 -->
-                    <div class="w-full h-48 bg-slate-100 overflow-hidden relative">
-                        <img src="카드뉴스3.jpg" alt="가공식품 교차구매 포스터" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <div class="w-full h-40 bg-slate-100 overflow-hidden relative">
+                        <img src="기획안/카드뉴스3.jpg" alt="가공식품 교차구매 포스터" class="w-full h-full object-cover hover:scale-105 transition duration-300">
                     </div>
-                    <div class="p-6 space-y-3">
-                        <div class="flex justify-between items-start gap-2">
+                    <div class="p-5 space-y-3">
+                        <div class="flex justify-between items-start gap-1">
                             <div>
-                                <span class="text-xs font-extrabold text-emerald-600 uppercase tracking-wide">식사 연계 교차구매</span>
-                                <h2 class="text-xl font-black text-slate-900 mt-0.5">신선식품 1만 원 이상 구매 시</h2>
+                                <span class="text-[11px] font-extrabold text-emerald-600 uppercase tracking-wide">식사 연계 교차구매</span>
+                                <h2 class="text-lg font-black text-slate-900 mt-0.5">신선 1만 원 이상 구매</h2>
                             </div>
-                            <div class="bg-emerald-600 text-white text-sm font-black px-2.5 py-1 rounded-xl shadow-sm shrink-0">
-                                가공 15% 할인
+                            <div class="bg-emerald-600 text-white text-xs font-black px-2 py-1 rounded-lg shadow-sm shrink-0">
+                                가공 15%[cite: 1, 14]
                             </div>
                         </div>
-                        <p class="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
-                            행사 신선식품을 1만 원 이상 담으시면 같이 먹기 좋은 지정 가공식품을 15% 할인가로 구매하실 수 있습니다[cite: 1, 14].
+                        <p class="text-xs text-slate-600 font-medium leading-relaxed">
+                            행사 신선식품 1만 원 이상 구매 시 지정 가공식품 최대 2개 15% 할인![cite: 1, 14]
                         </p>
                     </div>
                 </div>
-                <div class="p-6 pt-0">
-                    <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-3 text-xs text-slate-700 space-y-1">
-                        <p class="font-bold text-emerald-900">🛒 할인 대상 가공식품</p>
-                        <p class="text-emerald-800">• 지정 즉석밥 · 참치 · 멸치 (최대 2개까지 적용)[cite: 1, 14]</p>
+                <div class="p-5 pt-0">
+                    <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-3 text-[11px] text-slate-700 space-y-1">
+                        <p class="font-bold text-emerald-900">🛒 대상 가공식품</p>
+                        <p class="text-emerald-800">• 지정 즉석밥·참치·멸치 (최대 2개)[cite: 1, 14]</p>
                     </div>
                 </div>
             </section>
@@ -172,42 +160,50 @@
             <!-- PROMOTION 4: 리버점 단독 퇴근길 타임세일 -->
             <section class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white rounded-2xl border-2 border-indigo-400 shadow-lg overflow-hidden flex flex-col justify-between">
                 <div>
-                    <div class="bg-indigo-500 text-white px-5 py-2.5 flex justify-between items-center text-xs font-bold">
-                        <span>PROMOTION 04 · 단독 타임세일</span>
-                        <span class="bg-amber-400 text-slate-950 font-black px-2.5 py-0.5 rounded text-[11px]">리버점 단독 혜택</span>
+                    <div class="bg-indigo-500 text-white px-4 py-2.5 flex justify-between items-center text-xs font-bold">
+                        <span>PROMOTION 04</span>
+                        <span class="bg-amber-400 text-slate-950 font-black px-2 py-0.5 rounded text-[10px]">리버점 단독</span>
                     </div>
-                    <!-- 카드뉴스 4 이미지 삽입 -->
-                    <div class="w-full h-48 bg-slate-900 overflow-hidden relative">
-                        <img src="카드뉴스4.jpg" alt="리버점 퇴근길 타임세일 포스터" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    <div class="w-full h-40 bg-slate-900 overflow-hidden relative">
+                        <img src="기획안/카드뉴스4.jpg" alt="리버점 퇴근길 타임세일 포스터" class="w-full h-full object-cover hover:scale-105 transition duration-300">
                     </div>
-                    <div class="p-6 space-y-3">
-                        <div class="flex justify-between items-start gap-2">
+                    <div class="p-5 space-y-3">
+                        <div class="flex justify-between items-start gap-1">
                             <div>
-                                <span class="text-xs font-extrabold text-indigo-300 uppercase tracking-wide">퇴근길 바로 먹는 장보기</span>
-                                <h2 class="text-xl font-black text-white mt-0.5">당일 신선식품 & 간편식</h2>
+                                <span class="text-[11px] font-extrabold text-indigo-300 uppercase tracking-wide">퇴근길 타임세일</span>
+                                <h2 class="text-lg font-black text-white mt-0.5">신선식품 & 간편식</h2>
                             </div>
-                            <div class="bg-amber-400 text-slate-950 text-sm font-black px-2.5 py-1 rounded-xl shadow-sm shrink-0">
-                                20% 할인
+                            <div class="bg-amber-400 text-slate-950 text-xs font-black px-2 py-1 rounded-lg shadow-sm shrink-0">
+                                20% 할인[cite: 1, 15]
                             </div>
                         </div>
-                        <p class="text-xs sm:text-sm text-indigo-100 font-medium leading-relaxed">
-                            리버점 고객님을 위한 퇴근길 특가! 당일 행사 신선식품 및 간편식 마감 수량을 알뜰하게 챙기세요[cite: 1, 15].
+                        <p class="text-xs text-indigo-100 font-medium leading-relaxed">
+                            리버점 단독 특가! 당일 행사 신선식품 및 간편식 마감 수량 할인 찬스![cite: 1, 15]
                         </p>
                     </div>
                 </div>
-                <div class="p-6 pt-0">
-                    <div class="bg-indigo-950/80 border border-indigo-700/60 rounded-xl p-3 text-xs text-indigo-100 space-y-1">
-                        <div class="font-bold text-amber-300 text-sm">🕒 매일 17:00 ~ 20:00 (퇴근길 3시간)[cite: 1, 15]</div>
-                        <p class="text-[11px] text-indigo-300">* 준비 수량 소진 시 조기 종료됩니다[cite: 1, 15].</p>
+                <div class="p-5 pt-0">
+                    <div class="bg-indigo-950/80 border border-indigo-700/60 rounded-xl p-3 text-[11px] text-indigo-100 space-y-1">
+                        <div class="font-bold text-amber-300">🕒 매일 17:00 ~ 20:00[cite: 1, 15]</div>
+                        <p class="text-[10px] text-indigo-300">* 준비 수량 소진 시 조기 종료[cite: 1, 15]</p>
                     </div>
                 </div>
             </section>
 
         </main>
 
-        <!-- Notice Accordion -->
-        <footer class="pt-4 text-xs text-slate-500 space-y-4">
-            <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm max-w-3xl mx-auto">
+        <!-- Store Notice Bar -->
+        <section class="max-w-4xl mx-auto bg-blue-50 border border-blue-200 rounded-2xl p-4 text-center space-y-1 shadow-xs">
+            <div class="text-xs font-bold text-blue-900 uppercase tracking-wide">🏪 점포별 혜택 적용 안내</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium">
+                <strong class="text-blue-600">센트럴점 · 파크점</strong> : 프로모션 1 ~ 3번 공통 적용<br>
+                <strong class="text-indigo-600">리버점</strong> : 공통 혜택 + <strong>프로모션 4번(퇴근길 타임세일)</strong> 단독 추가 적용!
+            </p>
+        </section>
+
+        <!-- Common Notice Accordion -->
+        <footer class="pt-2 text-xs text-slate-500 space-y-4 max-w-4xl mx-auto pb-8">
+            <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
                 <button onclick="toggleNotice()" class="w-full flex justify-between items-center font-bold text-slate-700 text-sm cursor-pointer">
                     <span>📋 공통 유의사항 안내</span>
                     <span id="accordion-arrow" class="text-slate-400">▼</span>
